@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int h, m, a;
+	cin >> h >> m;
+	cin >> a;
+	int sum = h * 60 + m;
+	sum = sum + a;
+	if (sum >1439)
+	{
+		sum =  a - (1440 - (60 * h + m));
+		
+	}
+	
+		cout << sum / 60 << " " << sum % 60;
+
+
+	return 0;
+	
+}
