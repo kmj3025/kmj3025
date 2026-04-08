@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//x=총금액, a =물건종류의 개수 n = 한물건의 개수 m= 한물건의 금액 totla= 일치확인 총금액
+	int x, a, n,m, total = 0;    
+	cin >> x;
+	cin >> a;
+	for (int i = 0; i < a; i++)
+	{
+		cin >> m >> n;
+		total = m * n + total;
+	}
+	if (total == x)
+	{
+		cout << "Yes";
+
+	}
+	else
+	{
+		cout << "No";
+	}
+	return 0;
+
+
+
+	
+}
